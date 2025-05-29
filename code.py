@@ -7,7 +7,7 @@ st.set_page_config(page_title="Google Trends Analyzer", layout="centered")
 
 # Add logo and title
 st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
-st.image("https://funnel.io/hubfs/Google-trends.png", width=150)
+st.image("https://funnel.io/hubfs/Google-trends.png")
 st.markdown("</div>", unsafe_allow_html=True)
 
 st.title("📈 Google Trends Analyzer")
