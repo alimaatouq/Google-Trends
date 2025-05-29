@@ -2,10 +2,14 @@ import streamlit as st
 import pandas as pd
 from pytrends.request import TrendReq
 
-# Page configuration
+# Page config
 st.set_page_config(page_title="Google Trends Analyzer", layout="centered")
 
-# Title and intro
+# Add logo and title
+st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+st.image("https://funnel.io/hubfs/Google-trends.png", width=150)
+st.markdown("</div>", unsafe_allow_html=True)
+
 st.title("📈 Google Trends Analyzer")
 st.markdown("Enter one or more keywords (comma-separated) to compare their Google search interest over time.")
 
