@@ -6,9 +6,15 @@ from pytrends.request import TrendReq
 st.set_page_config(page_title="Google Trends Analyzer", layout="centered")
 
 # Add logo and title
-st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
-st.image("https://funnel.io/hubfs/Google-trends.png", width = 150)
-st.markdown("</div>", unsafe_allow_html=True)
+# Centered logo using HTML
+st.markdown(
+    """
+    <div style='text-align: center;'>
+        <img src='https://funnel.io/hubfs/Google-trends.png' width='150'/>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("📈 Google Trends Analyzer")
 st.markdown("Enter one or more keywords (comma-separated) to compare their Google search interest over time.")
