@@ -4,7 +4,11 @@ from pytrends.request import TrendReq
 import time
 
 # Page config
-st.set_page_config(page_title="Google Trends Analyzer", layout="centered")
+st.set_page_config(
+    page_title="Google Trends Analyzer",
+    layout="centered",
+    page_icon="https://ssl.gstatic.com/trends_nrtr/4031_RC01/favicon.ico" # Add this line
+)
 
 # Add logo and title
 # Centered logo using HTML
